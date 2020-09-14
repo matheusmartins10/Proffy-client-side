@@ -1,10 +1,16 @@
 import React from 'react'
 
+import Routes from './Routes'
+
+import {AuthProvider} from './Context/auth'
+
+import './assets/styles/global.css';
+
 const App = () => {
   return (
-    <div>
-      <h1>Hello world</h1>
-    </div>
+    <AuthProvider>
+      <Routes />
+    </AuthProvider>
   )
 }
 
